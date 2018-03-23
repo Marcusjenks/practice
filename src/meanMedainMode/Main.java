@@ -1,8 +1,4 @@
-<<<<<<< Upstream, based on origin/master
-//This program will fine the mean, median and mode for numbers input by the user
-=======
 //This program will calculate the mean, median and mode for number input by user
->>>>>>> 327bd86 Implement mode and fixed median
 package meanMedainMode;
 
 import java.util.ArrayList;
