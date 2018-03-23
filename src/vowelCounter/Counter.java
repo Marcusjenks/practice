@@ -23,7 +23,7 @@ public class Counter {
 					j++;
 			}
 		}
-		
+
 		System.out.print("\nThe number of vowels you have is: " + j);
 	}
 

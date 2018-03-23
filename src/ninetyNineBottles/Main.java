@@ -17,11 +17,9 @@ public class Main {
 			}
 			if (i == 1) {
 				System.out.println("Take one down pass it around, there are no more bottles of beer on the wall!\n");
-			}
-			else if (i == 2) {
+			} else if (i == 2) {
 				System.out.println("Take one down pass it around, " + (i - 1) + " bottle of beer on the wall!\n");
-			}
-			else
+			} else
 				System.out.println("Take one down pass it around, " + (i - 1) + " bottles of beer on the wall!\n");
 		}
 	}

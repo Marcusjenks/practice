@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		Prompt word = new Prompt();
 		Counter input = new Counter(word.getString("Type a word and I shall count the vowels!"));
-		
+
 		input.showWord();
 		input.countVowel();
 
