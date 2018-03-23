@@ -1,3 +1,4 @@
+//This program will fine the mean, median and mode for numbers input by the user
 package meanMedainMode;
 
 import java.util.Arrays;
