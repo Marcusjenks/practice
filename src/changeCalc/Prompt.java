@@ -4,21 +4,29 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Prompt {
-	private Scanner number;
+	private Scanner line;
 
 	public Prompt() {
-		number = new Scanner(System.in);
+		line = new Scanner(System.in);
 	}
 
-	public BigDecimal money() {
+	public BigDecimal money(String prompt) {
+		System.out.println(prompt);
+
 		BigDecimal m = new BigDecimal(0);
 		
 		try {
-			m = number.nextBigDecimal();
+			m = line.nextBigDecimal();
 		} catch (Exception e) {
 			System.out.println("Wrong input! Please use correct input!");
 		}
 
 		return m;
 	}
+	
+	public String getString(String prompt) {
+		System.out.println(prompt);
+		return line.nextLine();
+	}
+
 }
