@@ -6,10 +6,19 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		Random otherRps = new Random();
+		int compRps, playerRPS;
+
+			playerRPS = inputRPS();
+			compRps = computerRPS();
+
+			System.out.print(playerRPS + " " + compRps);
+
+	}
+
+	public static int inputRPS() {
 		Scanner input = new Scanner(System.in);
 		String answer;
-		int rps = 0, compRps;
+		int rps = 0;
 
 		System.out.println("Do you pick (1)Rock (2)Paper or (3) Scissors?");
 		answer = input.nextLine();
@@ -19,11 +28,13 @@ public class Main {
 		} catch (Exception e) {
 			System.out.println("Please enter the correct input!");
 		}
-		
-		compRps = otherRps.nextInt(3) + 1;
-		
-		System.out.print(rps + " " + compRps);
-
 		input.close();
+		return rps;
+	}
+
+	public static int computerRPS() {
+		Random otherRps = new Random();
+		return otherRps.nextInt(3) + 1;
+
 	}
 }
