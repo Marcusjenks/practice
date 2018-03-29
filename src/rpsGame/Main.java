@@ -6,13 +6,45 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		int compRps, playerRPS;
+		int compRPS, playerRPS;
 
-			playerRPS = inputRPS();
-			compRps = computerRPS();
+		playerRPS = inputRPS();
+		compRPS = computerRPS();
+		rpsGame(playerRPS, compRPS);
 
-			System.out.print(playerRPS + " " + compRps);
+		System.out.print(playerRPS + " " + compRPS);
 
+	}
+
+	private static void rpsGame(int playerRPS, int compRPS) {
+		
+		if(playerRPS == 1) {
+			
+			if (playerRPS == compRPS) {
+				System.out.println("You picked the same as the computer!");
+			}else if (compRPS == 2){
+				System.out.println("You Lose!");
+			} else if (compRPS == 3){
+				System.out.println("You Won!");
+			}
+		} else if(playerRPS == (2)) {
+			if (playerRPS == compRPS) {
+				System.out.println("You picked the same as the computer!");
+			}else if (compRPS == 1){
+				System.out.println("You Won!");
+			} else if (compRPS == 3){
+				System.out.println("You Lose!");
+			}
+		} else if(playerRPS == (3)) {
+			if (playerRPS == compRPS) {
+				System.out.println("You picked the same as the computer!");
+			}else if (compRPS == 1) {
+				System.out.println("You Lose!");
+			} else if (compRPS == 2){
+				System.out.println("You Won!");
+
+			}
+		}
 	}
 
 	public static int inputRPS() {
